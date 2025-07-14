@@ -1,0 +1,146 @@
+.personal-section {
+  padding: 4vh 6vh;
+  color: whitesmoke;
+  margin-top: 15vh;
+}
+
+/* Flex layout for the top section (image + text) */
+.personal-flex {
+  display: flex;
+  gap: 6vh;
+  flex-wrap: wrap; /* Stack on smaller screens */
+  align-items: flex-start;
+  margin-bottom: 5vh;
+}
+
+/* Image container */
+.personal-image-container {
+  flex-shrink: 0;
+}
+
+.personal-image {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+  margin-top: 7vh;
+}
+
+/* Text section to the right */
+.personal-text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Title */
+.section-title {
+  font-size: 5vh;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+/* Subtitle (e.g., Belief, Hobbies) */
+.section-subtitle {
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin: 4vh 0 2vh;
+}
+
+/* Main body text */
+.about-text,
+.goal-text,
+.project-text {
+  font-size: 2.2vh;
+  line-height: 1.8;
+  margin-bottom: 3vh;
+}
+
+/* Belief quote styling */
+.belief-quote {
+  border-left: 4px solid #4CAF50;
+  padding-left: 2vh;
+  font-style: italic;
+  color: #ccc;
+  font-size: 2.1vh;
+  line-height: 1.8;
+  margin-bottom: 4vh;
+}
+
+/* Career quote after goal */
+.career-quote {
+  font-size: 2vh;
+  font-style: italic;
+  color: #aaa;
+  margin-top: -2vh;
+  margin-bottom: 4vh;
+}
+
+/* Hobbies list */
+.hobby-list {
+  font-size: 2.1vh;
+  line-height: 1.8;
+  margin-left: 4vh;
+  margin-bottom: 4vh;
+}
+
+/* Passion project box */
+.project-box {
+  background-color: #002830;
+  border: 1px solid #4CAF50;
+  border-radius: 2vh;
+  padding: 3vh;
+  margin-bottom: 4vh;
+}
+
+.project-title {
+  font-size: 2.6vh;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.timer-section {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: 2.5vh;
+  color: #a3e4db;
+}
+
+.writing-section {
+  margin-top: 5vh;
+  padding: 3vh;
+  background-color: #002830;
+  border-radius: 2vh;
+  transition: opacity 1s ease-in;
+}
+
+.writing-text, .writing-quote {
+  font-size: 2.2vh;
+  line-height: 1.8;
+}
+
+.writing-quote {
+  margin-top: 2vh;
+  font-style: italic;
+  color: #a3e4db;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .personal-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-image {
+    width: 80vw;
+    height: auto;
+    border-radius: 2vh;
+  }
+
+  .personal-text-content {
+    width: 100%;
+  }
+}
+
