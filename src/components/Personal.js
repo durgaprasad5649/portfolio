@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Personal.css';
 
 const Personal = () => {
-  const [timeLeft, setTimeLeft] = useState(90); // 3 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(60); // 3 minutes in seconds
   const [showWriting, setShowWriting] = useState(false);
 
   useEffect(() => {
@@ -106,6 +106,18 @@ const Personal = () => {
           <blockquote className="writing-quote">
             "Some stories don’t need to be perfect — they just need to be real."
           </blockquote>
+          <br></br>
+        <div className="download-container">
+      <h2>Download PDFs</h2>
+
+      <a href="/a.pdf" download className="download-link">
+        A thread through hie heart - a love story of two young people
+      </a>
+      <br />
+      <a href="/b.pdf" download className="download-link">
+        Child abuse
+      </a>
+    </div>
         </div>
       )}
     </div>
