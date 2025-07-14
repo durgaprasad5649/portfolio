@@ -111,7 +111,7 @@ const Personal = () => {
       <h2>Download PDFs</h2>
 
       <a href="/a.pdf" download className="download-link">
-        A thread through hie heart - a love story of two young people
+        A thread through her heart - a love story of two young people
       </a>
       <br />
       <a href="/b.pdf" download className="download-link">
