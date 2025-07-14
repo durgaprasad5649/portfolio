@@ -15,7 +15,7 @@ const Upper = () => {
 
           <br />
           <br />
-<a href="/resume.pdf" download className="resume">
+<a href="/RESUME-DURGA PRASAD UDDAGIRI (2).pdf" download className="resume">
   Download Resume
 </a>
 

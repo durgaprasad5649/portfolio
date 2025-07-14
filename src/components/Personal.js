@@ -110,11 +110,11 @@ const Personal = () => {
         <div className="download-container">
       <h2>Download PDFs</h2>
 
-      <a href="/a.pdf" download className="download-link">
+      <a href="/A Thread Through His Heart.pdf" download className="download-link">
         A thread through her heart - a love story of two young people
       </a>
       <br />
-      <a href="/b.pdf" download className="download-link">
+      <a href="/child abuse.pdf" download className="download-link">
         Child abuse
       </a>
     </div>
