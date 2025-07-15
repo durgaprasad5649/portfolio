@@ -158,7 +158,7 @@
   .personal-image {
     width: 80vw;
     height: auto;
-    border-radius: 2vh;
+    border-radius: 50%;
   }
 
   .personal-text-content {

@@ -25,7 +25,7 @@ html{
 .upper {
   display: flex;
   height: 100vh; /* Full screen height */
-   overflow: hidden;
+  overflow: hidden;
   margin-top: 3vh;
   padding: 2vh;
 }
@@ -70,6 +70,7 @@ html{
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+  margin-top: 4vh;
 }
 
 .resume:hover {
@@ -337,4 +338,122 @@ font-size: 3vh;
   transform: scale(1.05);
   background-color: #005b66;
   border: 1px ;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  
+  .upper {
+    margin-top: 10vh;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh; /* Let it grow based on content */
+  }
+
+  .upper-left
+  {
+    margin-top: 2vh;
+    height: 60vh;
+margin-bottom: 1vh;
+  }
+  .upper-right
+  {
+    height: 30vh;
+    margin-bottom: 0vh;
+  }
+  .upper-left h1 {
+    font-size: 8vh; /* Smaller heading */
+   margin-bottom: auto;
+  }
+ 
+.resume{
+  padding: 2vh;
+  margin-top: 2vh;
+}
+  .upper-right img {
+    display: none;
+  }
+.social-icons-right {
+  display: flex;
+  gap:8vh;                 /* More space between icons */
+  font-size: 1.8rem;
+  margin-top: 1vh;          /* Pushes icons further down below image */
+  
+}
+
+.social-icons-right a {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons-right a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+
+
+   .bottom {
+    display: flex;
+    flex-direction: row;     /* Keep left and right side by side */
+    height: 100vh;           /* Ensure full height for independent scroll */
+    overflow: hidden;        /* Prevent body scroll bleed */
+  }
+
+  .bottom-left {
+   
+    height: 100vh;
+    overflow: hidden;
+     width: 35%;
+  }
+  .navbar-right{
+    margin-right: 3vh;
+  }
+
+
+  .navbar {
+    
+    padding: 2vh;
+    float: right;
+    
+  }
+ 
+   .inside-left {
+    margin-left: 0vh;
+    font-size: 1vh;
+      border-radius: 10px;
+  padding: 1vh;
+ 
+  
+}
+
+.scroll-button-b {
+    font-size: 3vh;           /* Slightly smaller font for mobile */
+    
+    letter-spacing: 0.5px;    /* Optional: tighten letter spacing */
+    margin-top: 1vh;          /* Add vertical spacing between buttons */
+  }
+.inside-left:hover {
+ background-color: #002830;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+  transform: translateY(-4px);
+
+  border: 1px solid #4CAF50;
+}
+.data-section
+{
+  font-size: 2.4vh;
+  line-height: 1.8; /* 1.6 times the font size */
+ 
+  box-sizing: border-box;
+ 
+
+}
+
+  .bottom-right {
+    width: 65%;
+    height: 100vh;
+    overflow-y: auto;        /* ✅ Independent vertical scroll */
+    padding: 0;
+  }
+
 }

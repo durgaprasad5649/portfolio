@@ -13,14 +13,13 @@ const Upper = () => {
           <h2>Full Stack Developer</h2>
           <p style={{fontSize:"2vh"}}>I build scalable, secure, and modern web applications.</p>
 
-          <br />
-          <br />
-<a href="/RESUME-DURGA PRASAD UDDAGIRI (2).pdf" download className="resume">
+
+<a href="/durgaprasaduddagiri.pdf" download className="resume">
   Download Resume
 </a>
 
           <br />
-          <br />
+         
           <button
   className="scroll-button"
   onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
