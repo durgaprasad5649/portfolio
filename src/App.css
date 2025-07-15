@@ -223,10 +223,17 @@ color: aliceblue;
  
 
 }
-.data-section p,h3,h4,ul,li{
+.data-section p,h3,h4{
 margin-left: 4vh;
 margin-right: 2vh;
 margin-top: 2vh;
+}
+.data-section ul,li{
+  margin-left: 0vh;
+}
+.data-section a 
+{
+  margin-left: 0vh;
 }
 .data-section:hover
 {
@@ -239,6 +246,7 @@ margin-top: 2vh;
 #contact a {
   color: #607D8B; /* Choose your color */
   text-decoration: none; /* Optional: removes underline */
+ 
 }
 
 #contact a:hover {
@@ -369,6 +377,9 @@ margin-bottom: 1vh;
 .resume{
   padding: 2vh;
   margin-top: 2vh;
+  background-color: transparent;
+  border: 1px solid #00353d;
+ 
 }
   .upper-right img {
     display: none;
@@ -403,7 +414,7 @@ margin-bottom: 1vh;
    
     height: 100vh;
     overflow: hidden;
-     width: 35%;
+     width: 30%;
   }
   .navbar-right{
     margin-right: 3vh;
@@ -427,21 +438,25 @@ margin-bottom: 1vh;
 }
 
 .scroll-button-b {
-    font-size: 3vh;           /* Slightly smaller font for mobile */
+    font-size: 2.5vh;           /* Slightly smaller font for mobile */
     
     letter-spacing: 0.5px;    /* Optional: tighten letter spacing */
     margin-top: 1vh;          /* Add vertical spacing between buttons */
   }
-.inside-left:hover {
- background-color: #002830;
-  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
-  transform: translateY(-4px);
+  .scroll-button-b:hover
+  
+  {
+    background-color: transparent;
+  }
 
-  border: 1px solid #4CAF50;
+.inside-left:hover {
+background-color: transparent;
+border: none  ;
+box-shadow: none;
 }
 .data-section
 {
-  font-size: 2.4vh;
+  font-size: 2.2vh;
   line-height: 1.8; /* 1.6 times the font size */
  
   box-sizing: border-box;
@@ -449,11 +464,22 @@ margin-bottom: 1vh;
 
 }
 
-  .bottom-right {
-    width: 65%;
-    height: 100vh;
-    overflow-y: auto;        /* ✅ Independent vertical scroll */
-    padding: 0;
-  }
+ .bottom-right {
+  width: 60%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scroll-button
+{
+
+padding: 1.5vh;
+font-size: 3vh;
+width: 20vh;
+background-color:transparent;
+border: none;
+color: aliceblue;
+}
 
 }
